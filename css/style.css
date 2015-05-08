@@ -1,0 +1,408 @@
+body{
+	background-color:#285CB9;
+	background-image: url("../images/Background.png");
+	background-attachment: fixed;
+
+	margin: 0px auto;
+	max-width:800px;
+	min-width:350px;
+	
+	font-family:sans-serif;
+	color:#2C3E50;
+}
+
+
+header{
+	height:100px;
+	 
+}
+
+nav{
+	/*background-color: #225378;
+	box-shadow: 2px 2px 10px #2C3E50;*/
+	width:100%;
+	padding-top:5px;	
+	padding-bottom:5px;
+	margin-bottom:10px;
+	
+}
+
+a.nav{
+	padding-top: 5px;
+	padding-bottom:6px;
+	padding-left:40px;
+	padding-right:40px;
+	margin-right:10px;
+
+	text-decoration: none;
+	color:white;	
+	background-color: #225378;
+	box-shadow: 2px 2px 10px #2C3E50;
+	-webkit-transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+    transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+    
+}
+
+a.nav:hover{
+	padding-top: 5px;
+	padding-bottom:6px;
+	padding-left:40px;
+	padding-right:40px;
+	margin-right:10px;
+	
+	text-decoration: none;
+	font-weight: bold;
+	color:#225378;
+	background-color: white;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+a.nav:active{
+	padding-top: 5px;
+	padding-bottom:6px;
+	padding-left:40px;
+	padding-right:40px;
+	margin-right:10px;
+
+	text-decoration: none;
+	color:white;
+	background-color: #225378;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+div#Footer{
+	display: block;
+	padding-top:5px;
+	padding-bottom:5px;
+	max-height:100px;
+	margin-top: 10px;
+	font-size: 12px;
+	color:#225378;
+	background-color:#B1DDF1; 		
+	box-shadow: 0px 0px 10px #2C3E50;
+	text-align: center;
+}
+
+a.foot{	
+	padding-top:5px;	
+	margin-left:5px;
+	margin-right:5px;
+	font-weight: bold;
+	text-decoration: none;
+	color:#225378;
+}
+
+a.foot:hover{	
+	margin-top:50px;	
+	margin-left:5px;
+	margin-right:5px;
+	font-weight: bold;
+	color:white;
+	text-decoration:underline;		
+}
+
+hr.foot{
+	margin:5px 0px 5px 0px;
+}
+
+/*Home Page-------------------------------------------------------------------------- */
+div#main {																				
+	height:660px;								
+}
+
+div#text {	
+	float:left;
+	height:640px;
+	width:630px;
+	padding:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	 
+	color:#2C3E50;
+	background-color:#B1DDF1; 
+
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+div#movietabshowcase{
+	float:left;
+	height:640px;
+	width:120px;	
+	padding:10px;
+	
+	text-align: center;
+	font-weight: bold;
+	background-color:#B1DDF1; 
+
+	box-shadow: 2px 2px 5px #2C3E50;
+}
+
+img.hmImage{
+	margin-top:10px;
+	
+	border-style: solid;
+    border-width: 3px;
+    border-color: #2C3E50;
+	width:100px;
+	height:130px;
+	box-shadow: 1px 1px 7px #2C3E50;
+}
+
+h2{
+	color:#2C3E50;
+	margin:0px 0px 10px 0px;
+}
+
+hr{	/*I used the code for the hr from CSS-TRICKS
+	https://css-tricks.com/examples/hrs/	*/
+	margin:15px 0px;
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #225378, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+hr.tab{
+	margin:5px 0px 0px 0px;
+}
+
+ul{	
+	list-style-type: square;
+}
+
+
+
+/*Contact Page----------------------------------------------------------------------- */
+div#cMain{
+	height:400px;
+}
+div#helpInfo{
+	padding:10px;
+	margin-right:10px;
+	float:left;
+	width:500px;
+	height:380px;
+	background-color:#B1DDF1;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+div#contactForm{
+	float:left;
+	padding:10px;
+	height:800px;
+	background-color:#B1DDF1;
+	width:250px;
+	height:380px;
+	font-weight: bold;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+input.contact, select.contact, textarea.contact{
+	min-width: 250px;
+	margin-bottom: 10px;
+}
+
+input.contactbt{
+	margin-top:10px;
+}
+
+/*Movie Page-------------------------------------------------------------------------*/
+div.mvTab{
+	font-family:sans-serif;
+	color:#2C3E50;
+	padding-top:10px;
+	margin-bottom: 10px;	
+	background-color:#B1DDF1; 
+	width:800px;
+	min-height:210px;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+div.mvTable{
+	font-family:sans-serif;
+	color:#2C3E50;
+	padding-top:10px;
+	margin-bottom: 10px;	
+	background-color:#B1DDF1; 
+	width:800px;
+	min-height:240px;
+	box-shadow: 2px 2px 10px #2C3E50;
+}
+
+
+table#Prices{
+	background-color: #285CB9;
+	margin: 0px 0px 0px 10px;
+	color:white;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+thead#tPrices{
+	 border: 1px solid black
+}
+
+td.pPrices{
+	padding:5px 0px 5px 20px;
+	
+}
+
+div.mvBoxArt{	
+	margin-left:10px;
+	margin-top:0px;
+	float:left;	
+}
+
+img.mvImage{
+	border-style: solid;
+    border-width: 3px;
+    border-color: #2C3E50;
+	width:120px;
+	height:180px;
+}
+
+div.imgtxt{
+	margin-top:5px;
+	width:120px;
+	
+	padding: 9px 3px 8px 3px;
+
+	background-color:#B1DDF1;
+	text-align:center;
+	font-weight:bold;
+}
+
+div.mvBody{
+	padding:0px;
+	background-color:#B1DDF1;	
+	width:640px;
+	min-height:165px;
+	margin-top:0px;
+	margin-left:10px;
+	float:left;
+}
+
+div.mvText{
+	font-size:15px;
+	margin-bottom:15px;
+}
+
+div.mvTitle{
+	font-weight: bold;
+	font-size:20px;
+}
+
+
+a.mvBook{
+	text-align:center;
+	float:left;
+	width:50px;
+	background-color:#285CB9;
+	color:white;
+	padding:5px;
+	margin-right:10px;
+	text-decoration: none;
+
+	-webkit-transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+    transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+}
+
+a.mvBook:hover{
+	background-color:white;
+	color:#285CB9;
+	font-weight:bold;
+	text-decoration: none;
+	}
+
+	input.mvBook{
+	text-align:center;
+	float:left;
+	width:50px;
+	background-color:#285CB9;
+	color:white;
+	padding:5px;
+	margin-right:10px;
+	text-decoration: none;
+
+	-webkit-transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+    transition: background-color 0.5s,color 0.5s, font-weight 0.5s;
+}
+
+input.mvBook:hover{
+	background-color:white;
+	color:#285CB9;
+	font-weight:bold;
+	text-decoration: none;
+	}
+
+/*Booking---------------------------------------------------------------------------- */
+
+div#overlay{
+	width: 100%; 
+	height: 100%;
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	background-color: #225378;
+	opacity: 0.5;
+	z-index: 2;
+	display: none;
+}
+
+div#Booking{
+	margin-left:150px;
+	border-radius: 5px;
+	position: fixed;
+	padding: 5px 5px 10px 5px;
+	background-color:#2C3E50;
+	width:500px;
+	height:442px;
+	box-shadow: 5px 5px 10px #2C3E50;	
+	z-index: 3;
+	display: none;
+}
+
+input#genre{
+	display: none;
+}
+
+div#exit{
+	padding:2px 5px 5px 5px;
+	border-radius: 5px 5px 0px 0px;
+	text-align: right;
+	background-color: white;
+	width:490px;
+	color:#2C3E50;
+	font-weight: bold;
+	font-size:25px;
+}
+
+input#exitbt{
+	color:#820007;
+}
+
+input#exitbt:hover{
+	color:red;	
+}
+
+input.bookbts{
+	min-width: 250px;
+}
+
+fieldset{
+	margin-bottom:10px;
+}
+
+form#bookingForm{
+	border-radius: 0px 0px 5px 5px;
+	padding:3px 2px 1px 2px;
+	/*color:white;*/
+	background-color:white;
+	height:405px;
+}
+
+
+
