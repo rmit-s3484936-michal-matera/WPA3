@@ -33,9 +33,9 @@
 				<img src="images/Header.png" alt="Silverado Cinema">
 			</header>
 			<nav>
-				<a class="nav" href="Home.html">HOME</a>
+				<a class="nav" href="index.php">HOME</a>
 				<a class="nav" href="#" onclick="calculateDayPrice()">MOVIES</a>				
-				<a class="nav" href="Contact.html">CONTACT</a>
+				<a class="nav" href="contact.php">CONTACT</a>
 			</nav>
 			
 			<div id="Booking">			

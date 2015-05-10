@@ -8,14 +8,8 @@
 	</head>
 	<body>		
 		<div id="all">
-			<header>
-				<img src="images/Header.png" alt="Silverado Cinema">
-			</header>
-			<nav>
-				<a class="nav" href="#">HOME</a>
-				<a class="nav" href="Movies.html">MOVIES</a>				
-				<a class="nav" href="Contact.html">CONTACT</a>
-			</nav>
+			<div class="header">						
+			</div>
 			<div id="main">
 				<div id="text">
 					<h2>Bookings</h2>

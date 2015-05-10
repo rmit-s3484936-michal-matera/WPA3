@@ -11,8 +11,8 @@
 				<img src="images/Header.png" alt="Silverado Cinema">
 		</header>
 		<nav>
-			<a class="nav" href="Home.html">HOME</a>
-			<a class="nav" href="Movies.html">MOVIES</a>				
+			<a class="nav" href="index.php">HOME</a>
+			<a class="nav" href="movies.php">MOVIES</a>				
 			<a class="nav" href="#">CONTACT</a>
 		</nav>
 		
