@@ -1,7 +1,39 @@
+
+table{
+	float:left;
+}
+
+td{
+	min-width: 20px;
+}
+
 div.sSeat{
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin:4px;
+	margin:5px;
 	background-color: blue;
+}
+
+div.sSeat:hover{	
+	width: 40px;
+	height: 40px;
+	margin:5px;
+	background-color: black;
+}
+
+
+div.fSeat{
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin:5px 5px 10px 5px;
+	background-color: blue;
+}
+
+div.fSeat:hover{	
+	width: 55px;
+	height: 55px;
+	margin:5px 5px 10px 5px;
+	background-color: black;
 }
