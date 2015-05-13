@@ -5,6 +5,7 @@
 		<meta name="description" content="Silverado Cinema website">
 		<title>Silverado Cinema Home</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-movies.css">
 		<script src="js/bookingScript.js"></script>	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
 		<script>

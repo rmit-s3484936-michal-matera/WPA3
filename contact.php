@@ -5,6 +5,7 @@
 		<meta name="description" content="Silverado Cinema website">
 		<title>Silverado Cinema Home</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-contact.css">
 	</head>
 	<body>
 		<header>
