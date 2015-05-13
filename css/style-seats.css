@@ -1,6 +1,6 @@
-#ssContanair{
-	width:850px;
-	height:450px;
+#ssContanair{	
+	width:800px;
+	height:550px;
 	background-color:white;
 
 	border-style: solid;
@@ -13,7 +13,7 @@ table{
 }
 
 td{
-	min-width: 20px;
+	/*min-width: 10px;*/
 	height: 45px;	
 }
 
@@ -21,13 +21,13 @@ div.sSeat{
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin:5px;
+	margin:4px;
 	background-color: blue;
 }
 div.sSeat:hover{	
 	width: 40px;
 	height: 40px;
-	margin:5px;
+	margin:4px;
 	background-color: black;
 }
 
@@ -35,28 +35,39 @@ div.sSeat:hover{
 div.fSeat{
 	width: 55px;
 	height: 55px;
-	margin:5px 5px 10px 5px;
+	margin:4px 4px 7px 4px;
 	background-color: blue;
 }
 div.fSeat:hover{	
 	width: 55px;
 	height: 55px;
-	margin:5px 5px 10px 5px;
+	margin:4px 4px 7px 4px;
 	background-color: black;
 }
 
 
 div.bSeat{
 	width: 60px;
-	height: 50px;
+	height: 60px;
 	margin:auto;	
 	background-color: blue;
-	border-radius: 25px;	
+	color:white;
+	text-align: center;
+
+	border-radius: 100px;	
 }
 div.bSeat:hover{	
 	width: 60px;
-	height: 50px;
+	height: 60px;
 	margin:auto;
 	background-color: black;
-	border-radius: 25px;
+	border-radius: 100px;
+}
+
+p.bbText{
+	margin:auto;
+	padding-top:16px;
+	font-size: 22px;
+	font-weight: bold;
+	
 }
