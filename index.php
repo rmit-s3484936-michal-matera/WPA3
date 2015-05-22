@@ -1,18 +1,20 @@
-<?php include 'top-part.php';?>
+	<?php include 'top-part.php';?>
 	<title>Silverado Cinema Home</title>
 		<?php include 'header.php';?>
+		
+		
 		
 			<div id="main">
 				<div id="text">
 					<h2>Bookings</h2>
 					Want to buy your tickets from home?
 					<br>
-					Then no Problem!
+					Then no problem!
 					<br>
 					You can buy tickets for any of our movies on whichever date they air by simply clicking on a day under the movie tabs.
 					<hr>
 					<h2>New Movies</h2>
-					Today we have pleasure to inform you that we are now airing our first four movies which you may have sen on the right side, where we will now be showing the top movies of the week.
+					Today we have pleasure to inform you that we are now airing our first four movies which you may have seen on the right side, where we will now be showing the top movies of the week.
 					<hr>
 					<h2>Silverado version 2 is up!</h2>
 					We have completely redesigned the website after feedback from our users. We hope that you will enjoy our new website.
@@ -25,9 +27,9 @@
 						</ul>
 					<hr>
 					<h2>Greetings to everyone</h2>	
-					Welcome to Sileverado Cinema!
+					Welcome to Silverado Cinema!
 					<br>
-					We are a small Cinema which has decided to embrace technology and creat our own website. We hope that this will be a benefit to everyone and that you will all enjoy it.
+					We are a small Cinema which has decided to embrace technology and create our own website. We hope that this will be a benefit to everyone and that you will all enjoy it.
 					<hr>
 
 				</div>

@@ -11,7 +11,11 @@
 			<a class="nav" href="../movies.html">MOVIES</a>				
 			<a class="nav" href="../contact.html">CONTACT</a>
 			</nav>
+				
 				<?php
+				/*
 			    echo "<h1>Hello world!</h1>";
 			    echo "<p>The time is ".date("g:i a")."</p>";
+				*/
 			  ?>
+			 

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,6 +10,7 @@
 		<link rel="stylesheet" href="css/style-movies.css">
 		<script src="js/bookingScript.js"></script>	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+		
 		<script>
 			$(document).ready(function(){
 		   		$("#exitbt").click(function(){
@@ -21,12 +24,12 @@
 		        	$("#Booking").fadeIn();
 		        	$("#overlay").fadeIn();        
 			    });
-			});			
-
+			});
 
 		</script>
 	</head>
 	<body>
+	
 		<div id="overlay">
 		</div>		
 		<div id="all">
@@ -153,17 +156,17 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="pPrices">Satndard-Full</td>
+								<td class="pPrices">Standard-Full</td>
 								<td class="pPrices">$12</td>
 								<td class="pPrices">$18</td>				
 							</tr>
 							<tr>
-								<td class="pPrices">Satndard-Conc</td>
+								<td class="pPrices">Standard-Conc</td>
 								<td class="pPrices">$10</td>
 								<td class="pPrices">$15</td>				
 							</tr>
 							<tr>
-								<td class="pPrices">Satndard-Child</td>
+								<td class="pPrices">Standard-Child</td>
 								<td class="pPrices">$8</td>
 								<td class="pPrices">$12</td>				
 							</tr>
@@ -185,6 +188,10 @@
 						</tbody>
 					</table>
 				</div>
+				<?php 
+				$movieData = file_get_contents('data.php');
+				$movieArray = json_decode($movieData,true);
+				?>	
 				<div class="mvTab">
 					<div class="mvBoxArt">
 						<!--Image used from IMBD
@@ -194,25 +201,20 @@
 
 					<div class="mvBody">
 						<div class="mvText">
-							<div class="mvTitle">
-								Finding Nemo 3D
+							<div id class="mvTitle">
+							<?php 
+							echo $movieArray['CH']['title'];
+							?>
 							</div>
 							<!--Information used from	http://www.imdb.com/title/tt0266543/-->
-							
-							Rated PG
-							<br>
-							<br>
-							After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.
-							<br>
-							<br>
-							<b>Directors:</b> Andrew Stanton, Lee Unkrich
-							<br>
-							<b>Cast:</b> Albert Brooks, Ellen DeGeneres, Alexander Gould
-
-							
+							<?php 
+							echo $movieArray['CH']['description'];
+							?>
 						</div>
 						<div class="mvTimes">		
-
+							
+							
+							
 							<a class="mvBook" id="btChMo" href="javascript:void(0)" onclick="btChMoF()">Mon</a>
 							<a class="mvBook" id="btChTu" href="javascript:void(0)" onclick="btChTuF()">Tue</a>
 							<a class="mvBook" id="btChWe" href="javascript:void(0)" onclick="btChWeF()">Wed</a>
@@ -220,6 +222,7 @@
 							<a class="mvBook" id="btChFr" href="javascript:void(0)" onclick="btChFrF()">Fri</a>		
 							<a class="mvBook" id="btChSa" href="javascript:void(0)" onclick="btChSaF()">Sat</a>		
 							<a class="mvBook" id="btChSu" href="javascript:void(0)" onclick="btChSuF()">Sun</a>
+							
 							
 						</div>	
 					</div>	
@@ -235,27 +238,25 @@
 				<div class="mvBody">
 					<div class="mvText">
 						<div class="mvTitle">
-							Batman Begins
+						<?php 
+							echo $movieArray['AC']['title'];
+						?>
 						</div>
 						<!--Information used from	http://www.imdb.com/title/tt0372784/?ref_=nv_sr_3-->
-						Rated M
-						<br>
-						<br>
-						After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.
-						<br>
-						<br>
-						<b>Director:</b> Christopher Nolan
-						<br>
-						<b>Cast:</b> Christian Bale, Michael Caine, Ken Watanabe
+						<?php 
+							echo $movieArray['AC']['description'];
+						?>
 						
 					</div>
 					<div class="mvTimes">	
+						
 						
 						<a class="mvBook" id="btAcWe" href="javascript:void(0)" onclick="btAcWeF()">Wed</a>
 						<a class="mvBook" id="btAcTh" href="javascript:void(0)" onclick="btAcThF()">Thu</a>
 						<a class="mvBook" id="btAcFr" href="javascript:void(0)" onclick="btAcFrF()">Fri</a>		
 						<a class="mvBook" id="btAcSa" href="javascript:void(0)" onclick="btAcSaF()">Sat</a>		
 						<a class="mvBook" id="btAcSu" href="javascript:void(0)" onclick="btAcSuF()">Sun</a>
+						
 						
 					</div>	
 				</div>	
@@ -270,22 +271,31 @@
 				<div class="mvBody">
 					<div class="mvText">
 						<div class="mvTitle">
-							27 Dresses
+						<?php 
+							echo $movieArray['RC']['title'];
+						?>
 						</div>	
 						<!--information used from	http://www.imdb.com/title/tt0988595/?ref_=nv_sr_1-->				
-						Rated PG
-						<br>
-						<br>
-						After serving as a bridesmaid 27 times, a young woman wrestles with the idea of standing by her sister's side as her sibling marries the man she's secretly in love with.
-						<br>
-						<br>
-						<b>Director:</b> Anne Fletcher
-						<br>
-						<b>Cast:</b>  Katherine Heigl, James Marsden, Malin Akerman
+						<?php 
+							echo $movieArray['RC']['description'];
+						?>
 
 						
 					</div>
 					<div class="mvTimes">
+					
+					<?php 
+					/*
+					$days = array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+							foreach($days as $value){
+								<a class="mvBook" href="javascript:void(0)" onclick="btRcMoF()">echo "$value"</a>
+								generic form needed for calling onclick if this method is used
+								
+							}
+					*/		
+					?>
+					
+						
 						<a class="mvBook" id="btRcMo" href="javascript:void(0)" onclick="btRcMoF()">Mon</a>
 						<a class="mvBook" id="btRcTu" href="javascript:void(0)" onclick="btRcTuF()">Tue</a>
 						<a class="mvBook" id="btRcWe" href="javascript:void(0)" onclick="btRcWeF()">Wed</a>
@@ -293,6 +303,8 @@
 						<a class="mvBook" id="btRcFr" href="javascript:void(0)" onclick="btRcFrF()">Fri</a>		
 						<a class="mvBook" id="btRcSa" href="javascript:void(0)" onclick="btRcSaF()">Sat</a>		
 						<a class="mvBook" id="btRcSu" href="javascript:void(0)" onclick="btRcSuF()">Sun</a>
+						
+						
 					</div>	
 				</div>	
 			</div>
@@ -307,25 +319,25 @@
 				<div class="mvBody">
 					<div class="mvText">
 						<div class="mvTitle">
-							Akira
+						<?php 
+							echo $movieArray['AF']['title'];
+						?>
 						</div>
 						<!--Information used from	http://www.imdb.com/title/tt0094625/?ref_=nv_sr_1-->
-						Rated R
-						<br>
-						<br>
-						A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psionic psychopath that only two kids and a group of psionics can stop.
-						<br>
-						<br>
-						<b>Director:</b> Katsuhiro Ôtomo
-						<br>
-						<b>Cast:</b> Nozomu Sasaki, Mami Koyama, Mitsuo Iwata 
+						<?php 
+							echo $movieArray['AF']['description'];
+						?>
 						
 					</div>
-					<div class="mvTimes">					
+					<div class="mvTimes">	
+
+						
 						<a class="mvBook" id="btAfMo" href="javascript:void(0)" onclick="btAfMoF()">Mon</a>
 						<a class="mvBook" id="btAfTu" href="javascript:void(0)" onclick="btAfTuF()">Tue</a>					
 						<a class="mvBook" id="btAfSa" href="javascript:void(0)" onclick="btAfSaF()">Sat</a>		
 						<a class="mvBook" id="btAfSu" href="javascript:void(0)" onclick="btAfSuF()">Sun</a>
+						
+						
 					</div>	
 				</div>			
 			</div>					
