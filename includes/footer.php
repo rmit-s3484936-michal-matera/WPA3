@@ -1,9 +1,9 @@
 			<div id="Footer">
 				<hr class="foot">
 				<!-- Copyright notice, nav links, html validation buttons -->			
-				<a class="foot" href="Home.html">Home</a>		
-				<a class="foot" href="Movies.html">Movies</a>				
-				<a class="foot" href="Contact.html">Contact Us</a>
+				<a class="foot" href="index.php">Home</a>		
+				<a class="foot" href="movies.php">Movies</a>				
+				<a class="foot" href="contact.php">Contact Us</a>
 				<a class="foot" href="http://validator.w3.org/check?uri=referer">Validator</a>
 				<br>
 				<br>		

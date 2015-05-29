@@ -30,17 +30,11 @@
 	</head>
 	<body>
 	
+	
 		<div id="overlay">
 		</div>		
 		<div id="all">
-			<header>
-				<img src="images/Header.png" alt="Silverado Cinema">
-			</header>
-			<nav>
-				<a class="nav" href="index.php">HOME</a>
-				<a class="nav" href="#" onclick="calculateDayPrice()">MOVIES</a>				
-				<a class="nav" href="contact.php">CONTACT</a>
-			</nav>
+			<?php include 'includes/header.php';?>
 			
 			<div id="Booking">			
 				<div id="exit">
@@ -189,9 +183,10 @@
 					</table>
 				</div>
 				<?php 
-				$movieData = file_get_contents('data.php');
-				$movieArray = json_decode($movieData,true);
+				//$movieData = file_get_contents('data.php');
+				//$movieArray = json_decode($movieData,true);
 				?>	
+				
 				<div class="mvTab">
 					<div class="mvBoxArt">
 						<!--Image used from IMBD
@@ -203,13 +198,26 @@
 						<div class="mvText">
 							<div id class="mvTitle">
 							<?php 
-							echo $movieArray['CH']['title'];
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray["CH"]["title"];
+							echo $movieArray["CH"]["poster"];
+							echo $movieArray["CH"]["rating"];
+							echo $movieArray["CH"]["dir"];
+							echo $movieArray["CH"]["cast"];
 							?>
 							</div>
 							<!--Information used from	http://www.imdb.com/title/tt0266543/-->
 							<?php 
-							echo $movieArray['CH']['description'];
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray["CH"]["description"];
 							?>
+							
 						</div>
 						<div class="mvTimes">		
 							
@@ -238,14 +246,26 @@
 				<div class="mvBody">
 					<div class="mvText">
 						<div class="mvTitle">
-						<?php 
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
 							echo $movieArray['AC']['title'];
-						?>
+							echo $movieArray['AC']['poster'];
+							echo $movieArray['AC']['rating'];
+							echo $movieArray['AC']['dir'];
+							echo $movieArray['AC']['cast'];
+							?>
 						</div>
 						<!--Information used from	http://www.imdb.com/title/tt0372784/?ref_=nv_sr_3-->
-						<?php 
-							echo $movieArray['AC']['description'];
-						?>
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray["AC"]["description"];
+							?>
 						
 					</div>
 					<div class="mvTimes">	
@@ -272,8 +292,16 @@
 					<div class="mvText">
 						<div class="mvTitle">
 						<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
 							echo $movieArray['RC']['title'];
-						?>
+							echo $movieArray['RC']['poster'];
+							echo $movieArray['RC']['rating'];
+							echo $movieArray['RC']['dir'];
+							echo $movieArray['RC']['cast'];
+							?>
 						</div>	
 						<!--information used from	http://www.imdb.com/title/tt0988595/?ref_=nv_sr_1-->				
 						<?php 
@@ -320,8 +348,16 @@
 					<div class="mvText">
 						<div class="mvTitle">
 						<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
 							echo $movieArray['AF']['title'];
-						?>
+							echo $movieArray['AF']['poster'];
+							echo $movieArray['AF']['rating'];
+							echo $movieArray['AF']['dir'];
+							echo $movieArray['AF']['cast'];
+							?>
 						</div>
 						<!--Information used from	http://www.imdb.com/title/tt0094625/?ref_=nv_sr_1-->
 						<?php 
@@ -342,22 +378,7 @@
 				</div>			
 			</div>					
 			<div id="Footer">
-				<hr class="foot">
-			<!-- Copyright notice, nav links, html validation buttons -->
-				
-				<a class="foot" href="Home.html">Home</a>
-			
-				<a class="foot" href="Movies.html">Movies</a>	
-				
-				<a class="foot" href="Contact.html">Contact Us</a>
-
-				<a class="foot" href="http://validator.w3.org/check?uri=referer">Validator</a>
-				<br>
-				<br>
-			
-				<div id="copyright">				
-					This page was created by Michal Matera (s3484936)
-					<hr class="foot">
+				<?php include 'includes/footer.php';?>
 				</div>
 			</div>
 		</div>

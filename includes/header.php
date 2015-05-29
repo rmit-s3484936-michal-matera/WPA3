@@ -5,9 +5,9 @@
 				<img src="./images/Header.png" alt="Silverado Cinema">
 			</header>
 			<nav>
-				<a class="nav" href="./index.html">HOME</a>
-			<a class="nav" href="./movies.html">MOVIES</a>				
-			<a class="nav" href="./contact.html">CONTACT</a>
+				<a class="nav" href="./index.php">HOME</a>
+			<a class="nav" href="./movies.php">MOVIES</a>				
+			<a class="nav" href="./contact.php">CONTACT</a>
 			</nav>
 				
 				<?php
