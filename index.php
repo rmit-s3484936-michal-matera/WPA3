@@ -1,6 +1,13 @@
-	<?php include 'top-part.php';?>
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="Cinema, Movie, Silverado">
+		<meta name="description" content="Silverado Cinema website">		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-index.css">
+	</head>
 	<title>Silverado Cinema Home</title>
-		<?php include 'header.php';?>
+		<?php include 'includes/header.php';?>
 		
 		
 		
@@ -52,5 +59,8 @@
 						<img class="hmImage" src="images/27Dresses.jpg" alt="27 Dresses">
 					</a>
 				</div>
-			</div>			
+			</div>	
+		<?php include 'includes/footer.php';?>
+	</body>
+</html>
 			
