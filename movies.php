@@ -191,6 +191,13 @@
 					<div class="mvBoxArt">
 						<!--Image used from IMBD
 						http://www.imdb.com/title/tt0266543/-->
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray['CH']['poster'];
+							?>
 						<img class="mvImage" src="images/FindingNemo3D.jpg" alt="Finding Nemo 3D">
 					</div>
 
@@ -202,11 +209,10 @@
 							//var_dump($movieData);
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
-							echo $movieArray["CH"]["title"];
-							echo $movieArray["CH"]["poster"];
-							echo $movieArray["CH"]["rating"];
-							echo $movieArray["CH"]["dir"];
-							echo $movieArray["CH"]["cast"];
+							echo $movieArray['CH']['title'];
+							echo $movieArray['CH']['rating'];
+							echo $movieArray['CH']['dir'];
+							echo $movieArray['CH']['cast'];
 							?>
 							</div>
 							<!--Information used from	http://www.imdb.com/title/tt0266543/-->
@@ -215,13 +221,11 @@
 							//var_dump($movieData);
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
-							echo $movieArray["CH"]["description"];
+							echo $movieArray['CH']['description'];
 							?>
 							
 						</div>
 						<div class="mvTimes">		
-							
-							
 							
 							<a class="mvBook" id="btChMo" href="javascript:void(0)" onclick="btChMoF()">Mon</a>
 							<a class="mvBook" id="btChTu" href="javascript:void(0)" onclick="btChTuF()">Tue</a>
@@ -240,6 +244,13 @@
 				<div class="mvBoxArt">
 					<!--Image used from  IMBD
 					http://www.imdb.com/title/tt0372784/?ref_=nv_sr_3-->
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray['AC']['poster'];
+							?>
 					<img class="mvImage" src="images/BatmanBegins.jpg" alt="Batman Begins">
 				</div>
 
@@ -252,7 +263,6 @@
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
 							echo $movieArray['AC']['title'];
-							echo $movieArray['AC']['poster'];
 							echo $movieArray['AC']['rating'];
 							echo $movieArray['AC']['dir'];
 							echo $movieArray['AC']['cast'];
@@ -264,7 +274,7 @@
 							//var_dump($movieData);
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
-							echo $movieArray["AC"]["description"];
+							echo $movieArray['AC']['description'];
 							?>
 						
 					</div>
@@ -285,6 +295,13 @@
 				<div class="mvBoxArt">
 					<!--Image used from  IMBD
 					http://www.imdb.com/title/tt0988595/?ref_=nv_sr_1-->
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray['RC']['poster'];
+							?>
 					<img class="mvImage" src="images/27Dresses.jpg" alt="27 Dresses">
 				</div>
 
@@ -297,7 +314,6 @@
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
 							echo $movieArray['RC']['title'];
-							echo $movieArray['RC']['poster'];
 							echo $movieArray['RC']['rating'];
 							echo $movieArray['RC']['dir'];
 							echo $movieArray['RC']['cast'];
@@ -305,8 +321,12 @@
 						</div>	
 						<!--information used from	http://www.imdb.com/title/tt0988595/?ref_=nv_sr_1-->				
 						<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
 							echo $movieArray['RC']['description'];
-						?>
+							?>
 
 						
 					</div>
@@ -341,6 +361,13 @@
 				<div class="mvBoxArt">
 					<!--Image used from  IMBD
 					http://www.imdb.com/title/tt0094625/?ref_=nv_sr_1-->
+							<?php 
+							$movieData = file_get_contents('data.php');
+							//var_dump($movieData);
+							$movieArray = json_decode($movieData,true);
+							//var_dump($movieArray);
+							echo $movieArray['AF']['poster'];
+							?>
 					<img class="mvImage" src="images/Akira.jpg" alt="Akira 3D">
 				</div>
 
@@ -353,7 +380,6 @@
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
 							echo $movieArray['AF']['title'];
-							echo $movieArray['AF']['poster'];
 							echo $movieArray['AF']['rating'];
 							echo $movieArray['AF']['dir'];
 							echo $movieArray['AF']['cast'];

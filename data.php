@@ -2,18 +2,11 @@
 {
   "AF": {
     "title": "Akira",
-    " poster": "images/Akira.jpg",
-    "description": [
-	"Rated R
-	<br>
-	<br>
-	A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psionic psychopath that only two kids and a group of psionics can stop.
-	<br>
-	<br>
-	<b>Director:</b> Katsuhiro Ôtomo
-	<br>
-	<b>Cast:</b> Nozomu Sasaki, Mami Koyama, Mitsuo Iwata" 
-    ],
+    "poster": "images/Akira.jpg",
+    "rating": "Rated R",
+	"description": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psionic psychopath that only two kids and a group of psionics can stop.",
+	"dir": "Director: Katsuhiro Ôtomo",
+	"cast": "Cast: Nozomu Sasaki, Mami Koyama, Mitsuo Iwata",
     "sessions": {
       "Monday": "6pm",
       "Tuesday": "6pm",
@@ -24,17 +17,10 @@
   "CH": {
     "title": "Finding Nemo 3D",
     "poster": "images/FindingNemo3D.jpg",
-    "description": [
-      "Rated PG
-	  <br>
-	  <br>
-	  After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.
-	  <br>
-	  <br>
-	  <b>Directors:</b> Andrew Stanton, Lee Unkrich
-	  <br>
-	  <b>Cast:</b> Albert Brooks, Ellen DeGeneres, Alexander Gould"
-    ],
+    "rating": "Rated PG",
+	"description":"After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+	"dir":"Directors: Andrew Stanton, Lee Unkrich",
+	"cast":"Cast: Albert Brooks, Ellen DeGeneres, Alexander Gould",
     "sessions": {
       "Monday": "1pm",
       "Tuesday": "1pm",
@@ -48,17 +34,10 @@
   "RC": {
     "title": "27 Dresses",
     "poster": "images/27Dresses.jpg",
-    "description": [
-    "Rated PG
-	<br>
-	<br>
-	After serving as a bridesmaid 27 times, a young woman wrestles with the idea of standing by her sister's side as her sibling marries the man she's secretly in love with.
-	<br>
-	<br>
-	<b>Director:</b> Anne Fletcher
-	<br>
-	<b>Cast:</b>  Katherine Heigl, James Marsden, Malin Akerman"
-    ],
+    "rating": "Rated PG",
+	"description":"After serving as a bridesmaid 27 times, a young woman wrestles with the idea of standing by her sister's side as her sibling marries the man she's secretly in love with.",
+	"dir":"Director: Anne Fletcher",
+    "cast":"Cast: Katherine Heigl, James Marsden, Malin Akerman",
     "sessions": {
       "Monday": "9pm",
       "Tuesday": "9pm",
@@ -72,17 +51,10 @@
   "AC": {
     "title": "Batman Begins",
     "poster": "images/BatmanBegins.jpg",
-    "description": [
-    "Rated M
-	<br>
-	<br>
-	After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.
-	<br>
-	<br>
-	<b>Director:</b> Christopher Nolan
-	<br>
-	<b>Cast:</b> Christian Bale, Michael Caine, Ken Watanabe"
-    ],
+    "rating": "Rated M",
+	"description":"After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.",
+	"dir":"Director: Christopher Nolan",
+	"cast":"Cast: Christian Bale, Michael Caine, Ken Watanabe",
     "sessions": {
       "Wednesday": "9pm",
       "Thursday": "9pm",
