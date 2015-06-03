@@ -1,4 +1,4 @@
-
+<?php session_start();  ?>
 
 <!DOCTYPE html>
 <html>
@@ -211,9 +211,10 @@
 							<div id class="mvTitle">
 							<?php 
 							$movieData = file_get_contents('data.php');
+							//print_r($_SESSION);
 							//var_dump($movieData);
 							$movieArray = json_decode($movieData,true);
-							//var_dump($movieArray);
+							var_dump($movieArray);
 							echo $movieArray['CH']['title'];
 							echo $movieArray['CH']['rating'];
 							echo $movieArray['CH']['dir'];
@@ -251,7 +252,7 @@
 					http://www.imdb.com/title/tt0372784/?ref_=nv_sr_3-->
 							<?php 
 							$movieData = file_get_contents('data.php');
-							//var_dump($movieData);
+							var_dump($movieData);
 							$movieArray = json_decode($movieData,true);
 							//var_dump($movieArray);
 							echo $movieArray['AC']['poster'];
@@ -338,14 +339,14 @@
 					<div class="mvTimes">
 					
 					<?php 
-					/*
-					$days = array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
-							foreach($days as $value){
-								<a class="mvBook" href="javascript:void(0)" onclick="btRcMoF()">echo "$value"</a>
-								generic form needed for calling onclick if this method is used
-								
-							}
-					*/		
+					
+					//$days = array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+					//		foreach($days as $value){
+					//			<a class="mvBook" href="javascript:void(0)" onclick="btRcMoF()">echo "$value"</a>
+					//			generic form needed for calling onclick if this method is used
+					//			
+					//		}
+							
 					?>
 					
 						
