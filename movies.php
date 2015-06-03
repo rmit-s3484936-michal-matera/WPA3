@@ -115,6 +115,11 @@
 								</tr>
 								<tr>
 									<td></td>
+									<td>Voucher</td>
+									<td><input type="text" id= "voucherReg" name="voucher" placeholder="12345-67890-ZI" pattern="^[0-9]{5}\-+[0-9]{5}\-+[A-Z]{2}$" <?php echo $voucher;?> required>
+								</tr>
+								<tr>
+									<td></td>
 									<td>Total Price &nbsp;&nbsp;</td>
 									<td><input type="text" id= "toPrice" name="price" placeholder="$0.00" readonly>
 								</tr>
